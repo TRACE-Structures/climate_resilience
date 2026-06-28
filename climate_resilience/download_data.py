@@ -49,7 +49,7 @@ def download_dfs(requests, dictionay_name):
         except Exception as e:
             print(f"Error with the dataset '{key_name}': {e}")
 
-def run_all_models(file_json,variable):
+def run_all_models(json_file,variable):
     """
     Load climate model configurations from a JSON file, download the corresponding
     datasets for each model and time interval, and return all results in a structured
@@ -77,8 +77,7 @@ def run_all_models(file_json,variable):
     """
 
     dfs_models = {}                                                  # Main dictionary
-    base_dir = os.getcwd()                                           # base_dir = os.getcwd() obtain current folder
-    with open(os.path.join(base_dir, file_json)) as f:
+    with open(json_file) as f:
         models = json.load(f)                                        # Read models from json file
     for model in models:                                             # Iterate through the models and download the data
         gcm = models[model]["gcm"]
