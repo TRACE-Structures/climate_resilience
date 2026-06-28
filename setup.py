@@ -3,7 +3,7 @@ from pathlib import Path
 
 setup(
     name='climate_resal',
-    version='0.1.1',
+    version='0.1.2',
     author='Giulia Pierotti, Costanza Guarducci, Bence Popovics',
     author_email='giulia.pierotti@phd.unipi.it, costanza.guarducci@unifi.it, popbence@hun-ren.sztaki.hu',
     description='Python package for climate resilience analysis and data processing using european climate model data of Copernicus Climate Change Service',
