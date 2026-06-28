@@ -1,0 +1,16 @@
+{
+    "irnet": {
+        "gcm": "ichec_ec_earth",
+        "rcm": "knmi_racmo22e",
+        "ensemble_orography": "r1i1p1",
+        "ensemble_model": "r1i1p1",
+        "start_years": [
+            "1950",
+            "1951"
+        ],
+        "end_years": [
+            "1950",
+            "1955"
+        ]
+    }
+}
